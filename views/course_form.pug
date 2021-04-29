@@ -1,0 +1,17 @@
+block content
+  h1=title
+
+  form(method='POST' action='/api/courses/create')
+    div.form-group
+      label(for='name') name: 
+      input#name.form-control(type='text', placeholder='Course name' name='name' required='true' value=(undefined===course ? '' : course.name) )
+      label(for='code') code: 
+      input#code.form-control(type='text', placeholder='Course Code' name='code' required='true' value=(undefined===course ? '' : course.code) )
+      label(for='description') description: 
+      input#description.form-control(type='text', placeholder='Course Description' name='description' value=(undefined===course ? '' : course.description))
+     
+     
+    button.btn.btn-primary(type='submit') Submit
+
+
+    

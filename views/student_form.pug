@@ -1,0 +1,13 @@
+block content
+  h1=title
+
+  form(method='POST' action='/api/students/create')
+    div.form-group
+      label(for='name') name:
+      input#name.form-control(type='text', placeholder='name' name='name' required='true' value=(undefined===student ? '' : student.name) )
+      label(for='code')  code:
+      input#code.form-control(type='text', placeholder='Code' name='code' required='true' value=(undefined===student ? '' : student.code) ) 
+    button.btn.btn-primary(type='submit') Submit
+
+
+    
