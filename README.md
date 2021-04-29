@@ -1,2 +1,2 @@
 # lms
-mini lms for lab7 project
+lab7 project
